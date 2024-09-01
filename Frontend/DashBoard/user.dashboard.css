@@ -1,0 +1,110 @@
+@import url('https //fonts.googleapis.com/css family=poppins');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.tab {
+    display: flex;
+    /* justify-content: space-around; */
+    background-color: rgb(62, 150, 62) ;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.tab button {
+    background-color: inherit;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.tab button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.tab button.active {
+    background-color: rgb(211, 189, 23);
+}
+.tabcontent {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.tabcontent.active {
+    display: block;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.form-group input[type="date"] {
+    width: auto;
+}
+
+#urgencyDateGroup{
+    display: none;
+}
+.btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #218838;
+}
+.order-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.order-list table th,
+.order-list table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.order-list table th {
+    background-color: #f8f9fa;
+}
+.status {
+    font-weight: bold;
+    color: #007bff;
+}
+.status.completed {
+    color: #28a745;
+}
+.status.pending {
+    color: #ffc107;
+}
+.status.failed {
+    color: #dc3545;
+}
