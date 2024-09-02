@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="user.dashboard.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- <div class="navbar-brand">
+                    <a href="#" class="logo"></a>
+                </div> -->
+                <ul class="navbar-menu">
+                    <li class="navbar-item active"><a href="#home" class="navbar-link">Home</a></li>
+                    <li class="navbar-item"><a href="#services" class="navbar-link">Services</a></li>
+                    <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                    <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+                </ul>
+                <div class="navbar-toggle" id="navbar-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="container">
         <h1>Welcome, Hamza</h1>
         <!-- <div class="tabs">
@@ -62,10 +82,17 @@
                     <input type="date" id="deliveryDate" name="deliveryDate" />
                 </div>
                 <div class="form-group">
-                    <a href="#" class="btn">Estimate Order</a>
-                    <a href="#" class="btn">Place Order</a>
+                    <a href="#" class="btn" id="estimateBtn">Estimate Order</a>
+                    <a href="#" class="btn" id="placeOrderBtn">Place Order</a>
                 </div>
             </form>
+            <div id="estimateSection" style="display:none;">
+                <h3>Order Estimate</h3>
+                <p><strong>Estimated Cost:</strong> <span id="estimatedCost"></span></p>
+                <p><strong>Estimated Route:</strong> <span id="estimatedRoute"></span></p>
+                <p><strong>Estimated Delivery Time:</strong> <span id="estimatedDeliveryTime"></span></p>
+                <p><strong>Order Feasibility:</strong> <span id="orderFeasibility"></span></p>
+            </div>
         </div>
 
         <!-- Existing Orders Section -->

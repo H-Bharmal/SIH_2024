@@ -11,23 +11,36 @@ document.getElementById('urgency').addEventListener('change', function() {
 document.getElementById('estimateBtn').addEventListener('click', function(e) {
     e.preventDefault();
     // Perform estimation logic here...
+    estimateOrder();
+});
 
+function estimateOrder(){
+    if( !isValidInput()){
+        alert('Please Enter Valid Input');
+        return false;
+    }
+    const source = document.getElementById('source').value;
+    const destination = document.getElementById('destination').value;
     // Dummy values for display purposes
-    document.getElementById('estimatedCost').innerText = '$50';
-    document.getElementById('estimatedRoute').innerText = 'Source to Destination via Route X';
+    document.getElementById('estimatedCost').innerText = '₹50';
+    document.getElementById('estimatedRoute').innerText = `${source} to ${destination} via Route X`;
     document.getElementById('estimatedDeliveryTime').innerText = '3 Days';
     document.getElementById('orderFeasibility').innerText = 'Possible';
 
     // Show the estimate section and Place Order button
     document.getElementById('estimateSection').style.display = 'block';
     document.getElementById('placeOrderBtn').style.display = 'inline-block';
-});
+    return true;
+}
 
 // Handle place order logic
 document.getElementById('placeOrderBtn').addEventListener('click', function(e) {
     e.preventDefault();
     // Implement the logic to place the order...
-
+    if( !estimateOrder() || (document.getElementById('orderFeasibility').innerText != 'Possible')){
+        alert('Order cannot be placed!');
+        return ;
+    }
     alert('Order placed successfully!');
 });
 
@@ -57,4 +70,47 @@ function openTab(evt, tabName) {
 // Default to open the first tab
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementsByClassName("tablinks")[0].click();
+    
 });
+
+function isValidInput(){
+     // Get values from input fields
+     const agency = document.getElementById('agency').value;
+     const itemWeight = document.getElementById('itemWeight').value;
+     const source = document.getElementById('source').value;
+     const destination = document.getElementById('destination').value;
+     const typeOfItem = document.getElementById('typeOfItem').value;
+     const urgency = document.getElementById('urgency').value;
+     const deliveryDate = document.getElementById('deliveryDate').value;
+ 
+     // Validate the inputs
+     let isValid = true;
+ 
+     if (!agency) {
+         isValid = false;
+     }
+     if (!itemWeight) {
+         isValid = false;
+     }
+     if (!source) {
+         isValid = false;
+     }
+     if (!destination) {
+         isValid = false;
+     }
+     if (!typeOfItem) {
+         isValid = false;
+     }
+     if (urgency === 'before-date' && !deliveryDate) {
+         isValid = false;
+     }
+ 
+     return isValid ;
+}
+// window.addEventListener('load', function() {
+//     // New URL to be displayed
+//     const newUrl = window.location.protocol + "//" + window.location.host + "/dashboard";
+    
+//     // Use history.pushState() to change the URL without reloading the page
+//     window.history.pushState({ path: newUrl }, '', newUrl);
+// });
