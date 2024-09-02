@@ -1,111 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
-    font-family: 'poppins', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f9fc;
     margin: 0;
     padding: 0;
+    color: #2e3a59;
 }
+
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 0;
+    max-width: 1100px;
 }
+
 h1 {
     text-align: center;
-    color: #333;
+    color: #1d2b53;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
 }
+
 .tab {
     display: flex;
-    /* justify-content: space-around; */
-    background-color: rgb(62, 150, 62) ;
-    border-radius: 8px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
+    overflow: hidden;
 }
+
 .tab button {
-    background-color: inherit;
-    color: white;
-    padding: 14px 20px;
+    flex: 1;
+    padding: 15px 0;
     border: none;
-    outline: none;
-    cursor: pointer;
+    background-color: transparent;
+    color: #5a6b88;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
 .tab button:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: #f0f4f8;
+    color: #1d2b53;
 }
+
 .tab button.active {
-    background-color: rgb(211, 189, 23);
+    background-color: #1d2b53;
+    color: #ffffff;
+    border-bottom: 3px solid #f0a500;
 }
+
 .tabcontent {
     display: none;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
+
 .tabcontent.active {
     display: block;
 }
+
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
+
 .form-group label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #4a5568;
 }
+
 .form-group input,
 .form-group select {
     width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #d1d9e6;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 15px;
 }
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1d2b53;
+    box-shadow: 0 0 0 3px rgba(29, 43, 83, 0.1);
+    outline: none;
+}
+
 .form-group input[type="date"] {
     width: auto;
 }
 
-#urgencyDateGroup{
+#urgencyDateGroup {
     display: none;
 }
+
 .btn {
     display: inline-block;
-    background-color: #28a745;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 4px;
+    background-color: #1d2b53;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
     text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
 }
+
 .btn:hover {
-    background-color: #218838;
+    background-color: #f0a500;
+    transform: translateY(-2px);
 }
+
 .order-list table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
+
 .order-list table th,
 .order-list table td {
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 15px;
+    border: 1px solid #e1e8f0;
     text-align: left;
 }
+
 .order-list table th {
-    background-color: #f8f9fa;
+    background-color: #f7f9fc;
+    font-weight: 600;
+    color: #2e3a59;
 }
+
+.order-list table tr:nth-child(even) {
+    background-color: #f0f4f8;
+}
+
 .status {
-    font-weight: bold;
-    color: #007bff;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: px;
+    display: inline-block;
+    text-align: center;
 }
+
 .status.completed {
     color: #28a745;
+    /* color: #ffffff; */
 }
+
 .status.pending {
     color: #ffc107;
+    /* color: #ffffff; */
 }
+
 .status.failed {
     color: #dc3545;
+    /* color: #ffffff; */
 }
