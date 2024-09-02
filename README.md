@@ -1,15 +1,19 @@
-﻿SIH_2024
-# Project Prototype Demo : https://sih-hopes404.vercel.app/
-# Problem Statement Number: SIH_1759
-# Organisation : Ministry of Communication
-# Problem Statement Title :
-DYNAMIC MAIL TRANSMISSION SOLUTION USING BEST CONNECTIVITY ACROSS MODES
-# Theme : Transportation & Logistics
-# Category : Software
-# Problem Statement Description :
-"Serving a large country like India with the habitations across states, cities, towns, blocks and villages with geographic diversity as well is a complex task.
-The availability of multiple modes of transport for secure transmission of mail, parcels, cargo and people is a boon. Postal mail with its volume, value and weight profile has unique requirements for efficient and effective transmission to cover all delivery points around the sorting and transmission hubs that have been created over the years.
-With a focus on dynamic allocation and use of available transport within the structure of mail operations defined by the Department of Posts, we
-need a system to help choose the best mode across land, rail, air and water for fastest transmission of mail in each local context. "
+# Smart India Hackathon 2024 (SIH 2024) Project Prototype Demo
 
-# PPT Link : https://www.canva.com/design/DAGPekx8NwA/8WS5H3uNR5iKVpAgRqIlHA/edit?utm_content=DAGPekx8NwA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+- *Demo Link:* [SIH Hopes 404 Prototype](https://sih-hopes404.vercel.app/)
+
+## Problem Statement Details
+
+- *Problem Statement Number:* SIH_1759
+- *Organisation:* Ministry of Communication
+- *Title:* Dynamic Mail Transmission Solution Using Best Connectivity Across Modes
+- *Theme:* Transportation & Logistics
+- *Category:* Software
+
+### Problem Statement Description
+
+Serving a large country like India, with its diverse geography and scattered habitations across states, cities, towns, blocks, and villages, is a complex task. The availability of multiple modes of transport for secure transmission of mail, parcels, cargo, and people is a boon. 
+
+Postal mail, with its volume, value, and weight profile, has specific requirements for efficient and effective transmission to cover all delivery points, including the sorting and transmission hubs created over the years. The focus is on dynamic allocation and the use of available transport modes within the structure of mail operations, as defined by the Department of Posts. This system should help choose the best mode of transport across land, rail, air, and water for the fastest transmission of mail in each local context.
+
+- *PPT Link:* [View the Presentation](https://www.canva.com/design/DAGPekx8NwA/8WS5H3uNR5iKVpAgRqIlHA/edit?utm_content=DAGPekx8NwA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
